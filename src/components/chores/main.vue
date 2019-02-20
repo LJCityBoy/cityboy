@@ -1,0 +1,131 @@
+<template>
+<div>
+  <div class="box">
+    <h1 class="cb-titleNav">
+      <span>成功需要努力，成功需要实力与运气！</span>
+      <a href="index.html">网站首页</a>
+      <a href="#">杂事分类</a>
+    </h1>
+  </div>
+  <article class="cb-choresCon">
+    <div class="cb-chores left">
+      <div class="cb-chores-lis">
+        <h3>文章的标题</h3>
+        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
+        <ul>
+          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
+          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
+        </ul>
+        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
+      </div>
+      <div class="cb-chores-lis">
+        <h3>文章的标题</h3>
+        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
+        <ul>
+          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
+          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
+        </ul>
+        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
+      </div>
+      <div class="cb-chores-lis">
+        <h3>文章的标题</h3>
+        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
+        <ul>
+          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
+          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
+        </ul>
+        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
+      </div>
+      <div class="cb-chores-lis">
+        <h3>文章的标题</h3>
+        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
+        <ul>
+          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
+          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
+        </ul>
+        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
+      </div>
+      <div class="cb-page">
+        <a href="#"><b>18</b></a>
+        <b>1</b>
+        <a href="#">2</a>
+        <a href="#">&gt;</a>
+        <a href="#">&gt;&gt;</a>
+      </div>
+    </div>
+    <aside class="cb-chores-c right">
+      <div class="cb-rnav">
+        <ul>
+          <li class="cb-rnav-c1"><a href="#">javascript</a></li>
+          <li class="cb-rnav-c2"><a href="#">Object-C</a></li>
+          <li class="cb-rnav-c3"><a href="#">HTML5</a></li>
+          <li class="cb-rnav-c4"><a href="#">CSS3</a></li>
+        </ul>
+      </div>
+      <div class="cb-news">
+        <h3>
+          <p>最新<span>文章</span></p>
+        </h3>
+        <ul class="cb-rank">
+          <li><a href="#">three.js开发指南</a></li>
+          <li><a href="#">three.js开发指南</a></li>
+          <li><a href="#">three.js开发指南</a></li>
+          <li><a href="#">three.js开发指南</a></li>
+          <li><a href="#">three.js开发指南</a></li>
+        </ul>
+        <h3 class="cb-links">
+          <p>友情<span>连接</span></p>
+        </h3>
+        <ul class="cb-website">
+          <li><a href="#">three.js官网</a></li>
+          <li><a href="#">Vue官网</a></li>
+          <li><a href="#">简书</a></li>
+        </ul>
+        <div class="cb-weixin"><img src="../../assets/images/weixin.jpg" alt="微信"></div>
+      </div>
+
+    </aside>
+
+  </article>
+</div>
+</template>
+
+<script>
+    export default {
+        name: "main"
+    }
+</script>
+
+<style scoped>
+  .cb-choresCon{
+    width: 1000px;
+    margin: 10px auto;
+  }
+  .cb-chores{
+    background: url(../../assets/images/r_line.jpg) repeat-y right;
+    width: 740px;
+    min-height: 600px;
+  }
+  .cb-chores h3{
+    color: #333;
+    margin: 20px 0px 10px 0px;
+    font: 15px '微软雅黑',Arial,Helvetica,sans-serif;
+    font-weight: bold;
+  }
+  .cb-chores figure{
+    width: 183px;
+    float: left;
+  }
+  .cb-chores figure img{
+    width: 175px;
+    padding: 4px;
+    border: solid 1px #f4f2f2;
+  }
+  .cb-chores  ul{
+    width: 520px;
+    float: left;
+    margin: 10px 0 0 15px;
+    display: block;
+  }
+
+</style>
