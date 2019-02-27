@@ -1,19 +1,20 @@
 <template>
-    <div>
-      这里有待开发，将会用webgl开发一个三维的场景
-    </div>
+  <div id="myWorld">
+
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "main"
-    }
+
+
+  import myWorld from '../../assets/js/creation/world'
+
+  export default {
+    mounted: myWorld.action
+  }
 </script>
 
 <style scoped>
-div{
-  width: 1000px;
-  margin: 40px auto;
-  text-align: center;
-}
+
+
 </style>

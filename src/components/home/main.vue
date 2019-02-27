@@ -4,9 +4,9 @@
         <section class="box ">
           <div class="cb-banner-section">
             <ul class="cb-texts">
-              <p>春花秋月何时了？往事知多少。</p>
-              <p>小楼昨夜又东风</p>
-              <p>古国不堪回首月明中...</p>
+              <p>行到水穷处</p>
+              <p>坐看云起时</p>
+              <p>豁然开朗.....</p>
             </ul>
             <div class="cb-avatar"><a href="#"><span>CityBoy</span></a></div>
           </div>
