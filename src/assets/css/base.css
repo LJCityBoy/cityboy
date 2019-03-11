@@ -11,7 +11,7 @@ a:link, a:visited {text-decoration: none; color: #333;}
 .box{
     width:1000px;
     margin:auto;
-    overflow:hidden
+    overflow:hidden;
 }
 
 
