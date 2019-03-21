@@ -9,42 +9,46 @@
   </div>
   <article class="cb-choresCon">
     <div class="cb-chores left">
-      <div class="cb-chores-lis">
-        <h3>文章的标题</h3>
+      <div class="cb-chores-lis" v-for="article in articles">
+        <h3>{{article.title}}</h3>
         <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
         <ul>
-          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
-          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
+          <div class="cb-bloglist-art" v-html="article.article"></div>
+          <div class="cb-boli"></div>
+          <Router-link class="cb-readmored" :to="{ name:'detail',query:{dat:article}}">阅读全文>></Router-link>
         </ul>
-        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
+        <p class="cb-dateview"><span>2019-02-12</span><span>作者：{{article.author}}</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p>
       </div>
-      <div class="cb-chores-lis">
-        <h3>文章的标题</h3>
-        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
-        <ul>
-          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
-          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
-        </ul>
-        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
-      </div>
-      <div class="cb-chores-lis">
-        <h3>文章的标题</h3>
-        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
-        <ul>
-          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
-          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
-        </ul>
-        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
-      </div>
-      <div class="cb-chores-lis">
-        <h3>文章的标题</h3>
-        <figure><img src="../../assets/images/003.png" alt="cityboy"></figure>
-        <ul>
-          <p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>
-          <Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>
-        </ul>
-        <p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>
-      </div>
+
+
+      <!--<div class="cb-chores-lis">-->
+        <!--<h3>文章的标题</h3>-->
+        <!--<figure><img src="../../assets/images/003.png" alt="cityboy"></figure>-->
+        <!--<ul>-->
+          <!--<p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>-->
+          <!--<Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>-->
+        <!--</ul>-->
+        <!--<p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>-->
+      <!--</div>-->
+      <!--<div class="cb-chores-lis">-->
+        <!--<h3>文章的标题</h3>-->
+        <!--<figure><img src="../../assets/images/003.png" alt="cityboy"></figure>-->
+        <!--<ul>-->
+          <!--<p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>-->
+          <!--<Router-link class="cb-readmored" :to="{name:'detail'}">阅读全文>></Router-link>-->
+        <!--</ul>-->
+        <!--<p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>-->
+      <!--</div>-->
+      <!--<div class="cb-chores-lis">-->
+        <!--<h3>文章的标题</h3>-->
+        <!--<figure><img src="../../assets/images/003.png" alt="cityboy"></figure>-->
+        <!--<ul>-->
+          <!--<p>原理上同Maya中的BlendShape。通过直接使模型的每个点位置发生改变，适用于细节变化的时候（变化非常细节时，用骨架难以操控，不然要设置非常多个骨架，不然就不够真实）....</p>-->
+          <!--&lt;!&ndash;<Router-link class="cb-readmored" :to="{path:'chore/detail', name:'detail'}">阅读全文>></Router-link>&ndash;&gt;-->
+          <!--<Router-link class="cb-readmored" :to="{path:'/chores/detail'}">阅读全文>></Router-link>-->
+        <!--</ul>-->
+        <!--<p class="cb-dateview"><span>2019-02-12</span><span>作者：cityboy</span><span>个人博客[<a href="https://threejs.org">博客名称</a>]</span></p></li>-->
+      <!--</div>-->
       <div class="cb-page">
         <a href="#"><b>18</b></a>
         <b>1</b>
@@ -92,7 +96,35 @@
 
 <script>
     export default {
+      data(){
+        return {
+          articles : ''
+        }
+      },
+      created(){
+        {
+          //获取推荐文章
+          let self = this; //防止this在ajax里混乱不清
+          $.ajax({
+            url:'http://localhost:9001/api/get_indexArticle_byPage',
+            type:'get',
+            data:{
+              pageLength: 20, //每页条数
+              pageIndex: 1 //第几页
+            },
+            success:function (obj) {
+              console.log("c请求到数据",obj.data);
+              if (obj.data.length >=2){
+                self.articles = obj.data[1];
+              }
 
+            },
+            error:function (err) {
+              console.log(err);
+            }
+          })
+        }
+      }
     }
 </script>
 
@@ -126,6 +158,20 @@
     float: left;
     margin: 10px 0 0 15px;
     display: block;
+    position: relative;
+  }
+  .cb-bloglist-art{
+    height: 70px;
+    overflow: hidden;
+  }
+  .cb-boli{
+    width: 520px;
+    height: 10px;
+    /*background-color:rgba(0.1,0.1,0.1,0.1);*/
+    position: absolute;
+    bottom: 54px;
+    background:#ffffff  center bottom fixed;/* 与上面的bg中的background设置一样 */
+    filter: blur(1px);/* 值越大越模糊 */
   }
 
 </style>

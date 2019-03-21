@@ -14,8 +14,19 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/home'
+    },
+    {
+      path: '/home',
       name: 'home',
-      component: Home
+      component: Home,
+      // children :[
+      //   {
+      //     path: '/home/detail',
+      //     name : 'detail',
+      //     component : Detail
+      //   }
+      // ]
     },
     {
       path: '/about',
@@ -26,7 +37,14 @@ export default new Router({
     {
       path: '/chores',
       name: 'chores',
-      component : Chores
+      component : Chores,
+      // children:[
+      //   {
+      //     path: '/chores/detail',
+      //     name : 'detail',
+      //     component : Detail
+      //   }
+      // ]
     },
     {
       path: '/world',

@@ -2,7 +2,7 @@
 import  'three/examples/js/controls/PointerLockControls'
 
 class PointLockControlsModule {
-  constructor(scene,camera,blockerID,instructionID){
+  constructor(scene,camera,playerBody,blockerID,instructionID){
     let pControls;
     let moveForward = false;//向前
     let moveBackward = false;//向后
@@ -10,13 +10,13 @@ class PointLockControlsModule {
     let moveRight = false;//向右
     let canJump = false;//跳跃
     let raycaster;//用于做碰撞检测
-    let prevTime = Date.now() // 初始时间
-    let velocity = new THREE.Vector3() // 移动速度向量
-    let direction = new THREE.Vector3() // 移动方向向量
+    let prevTime = Date.now(); // 初始时间
+    let velocity = new THREE.Vector3(); // 移动速度向量
+    let direction = new THREE.Vector3(); // 移动方向向量
 
     //鼠标锁定初始化
     pControls = new THREE.PointerLockControls(camera);
-    pControls.getObject().position.set(10,0,60);
+    pControls.getObject().position.set(0,1,0);
     scene.add(pControls.getObject());
     //进入画面
     let blocker = document.getElementById(blockerID);
@@ -66,7 +66,9 @@ class PointLockControlsModule {
         case 32:
           if (canJump === true) velocity.y += 350;
           canJump = false;
-          break
+          break;
+        default:
+          break;
       }
     };
     const onKeyUp = function (event) {
@@ -97,7 +99,7 @@ class PointLockControlsModule {
       new THREE.Vector3(),
       new THREE.Vector3(0,-1,0),
       0,10
-    )
+    );
 
    this.pointerLockControlersRender = function () {
       if (pControls.isLocked === true){
@@ -136,7 +138,7 @@ class PointLockControlsModule {
         pControls.getObject().translateZ(velocity.z * delta);
         if (pControls.getObject().position.y < -2000){
           velocity.y = 0;
-          pControls.getObject().position.set(10,100,60);
+          pControls.getObject().position.set(0,1,0);
           canJump = true;
         }
         prevTime = time;

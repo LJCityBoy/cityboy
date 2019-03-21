@@ -67,10 +67,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ]),
     new webpack.ProvidePlugin({
       //全局
-      'THREE': require.resolve('three')
-      // $: "jquery",
-      // jQuery: "jquery",
-      // "windows.jQuery": "jquery"
+      'THREE': require.resolve('three'),
+      $: "jquery",
+      jQuery: "jquery",
+      "windows.jQuery": "jquery"
     })
   ]
 })
