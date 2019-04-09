@@ -77,7 +77,7 @@
         //获取推荐文章
         let self = this; //防止this在ajax里混乱不清
          $.ajax({
-          url:'http://localhost:9001/api/get_index_recommended',
+          url:'http://132.232.40.236:9001/api/get_index_recommended',
           type:'get',
           data:{
             count: 4 //随机获取4条数据
