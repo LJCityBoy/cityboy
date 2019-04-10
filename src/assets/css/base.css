@@ -1,7 +1,7 @@
-@charset "gb2312";
+@charset "utf-8";
 /* CSS Document */
 * { margin: 0; padding: 0 }
-body { font: 12px "ËÎÌå", Arial, Helvetica, sans-serif; color: #756F71 }
+body { font: 12px "ï¿½ï¿½ï¿½ï¿½", Arial, Helvetica, sans-serif; color: #756F71 }
 img { border: 0; display: block }
 ul { list-style: none; }
 a:link, a:visited {text-decoration: none; color: #333;}
@@ -20,11 +20,11 @@ aside { width: 250px; }
 
 
 
-/*----¶¥²¿µÄ±êÌâµ¼º½----*/
+/*----ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½âµ¼ï¿½ï¿½----*/
 .cb-titleNav{
     border-bottom: solid 1px #f3f3f3;
     display: block;
-    font:14px 'Î¢ÈíÑÅºÚ',Arial,Helvetica,sans-serif;
+    font:14px 'Î¢ï¿½ï¿½ï¿½Åºï¿½',Arial,Helvetica,sans-serif;
     height: 35px;
     line-height: 35px;
     margin: 5px 0 20px 0;
@@ -48,7 +48,7 @@ aside { width: 250px; }
 .cb-titleNav a:last-child{
     background-color: #287FC2;
 }
-/*-----ÔÄ¶Á¸ü¶à-----*/
+/*-----ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½-----*/
 a.cb-readmored{
     display: block;
     float: right;
@@ -74,7 +74,7 @@ a.cb-readmored{
     color: #70DBDB;
 }
 
-/*----·ÖÒ³-----*/
+/*----ï¿½ï¿½Ò³-----*/
 .cb-page{
     width: 100%;
     margin: 20px 0 0 0;
@@ -97,7 +97,7 @@ a.cb-readmored{
     border: solid 1px #fd8a61;
 }
 
-/*------ÓÒ±ßµ¼º½-------*/
+/*------ï¿½Ò±ßµï¿½ï¿½ï¿½-------*/
 .cb-rnav{
     width: 250px;
     overflow: hidden;
@@ -134,7 +134,7 @@ a.cb-readmored{
 }
 
 
-/*----×îÐÂÎÄÕÂ£¬ÓÑÇéÁ´½Ó£¬Î¢ÐÅ¶þÎ¬Âë-----*/
+/*----ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½Î¢ï¿½Å¶ï¿½Î¬ï¿½ï¿½-----*/
 .cb-news h3{
     background: url(../images/r_title_bg.jpg) repeat-x center;
     font-size: 14px;
@@ -187,7 +187,7 @@ a.cb-readmored{
     margin:10px 0;
     display: block;
 }
-/*---ÔÄ¶ÁÈ«ÎÄ-----*/
+/*---ï¿½Ä¶ï¿½È«ï¿½ï¿½-----*/
 .cb-detail-art img{
   max-width: 710px;
   height: auto;

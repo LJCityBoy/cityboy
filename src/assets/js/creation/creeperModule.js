@@ -8,12 +8,12 @@ class Creeper {
 
     //加载脸部贴图
     const headMap = new THREE.TextureLoader().load(
-      '../../../../static/creeper/creeper_face.png'
+      './static/creeper/creeper_face.png'
     );
 
     //加载皮肤贴图
     const skinMap = new THREE.TextureLoader().load(
-      '../../../../static/creeper/creeper_skin.png'
+      './static/creeper/creeper_skin.png'
     );
 
     //创建统一的材质

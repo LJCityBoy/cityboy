@@ -2,7 +2,7 @@
 class Explosion {
   constructor(scene,x,y){
     //材质
-    this.smokeTexture = new THREE.TextureLoader().load('../../../../static/creeper/smoke.png');
+    this.smokeTexture = new THREE.TextureLoader().load('./static/creeper/smoke.png');
     let geometry = new THREE.Geometry();
     let material = new THREE.PointsMaterial({
       size:15,

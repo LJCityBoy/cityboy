@@ -64,7 +64,7 @@ function main() {
     let pointLength = 5200;//粒子数量
 
     //加载粒子贴图
-    let texture = new THREE.TextureLoader().load('../../../../static/creeper/snowflake.png');
+    let texture = new THREE.TextureLoader().load('./static/creeper/snowflake.png');
 
     let geometry = new THREE.Geometry();
     let material = new THREE.PointsMaterial({

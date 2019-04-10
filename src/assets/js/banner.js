@@ -1,5 +1,7 @@
+// import { resolve } from "path";
 
-function banner() {
+
+function banner(srcjson) {
   // if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
   var container;
@@ -31,8 +33,9 @@ function banner() {
 
     scene = new THREE.Scene();
     scene.background = new THREE.CubeTextureLoader()
-      .setPath( '../../../static/Park3Med/' )
+      .setPath("./static/Park3Med/" )
       .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
+    
 
     var geometry = new THREE.SphereBufferGeometry( 100, 32, 16 );
 

@@ -33,7 +33,7 @@
           <h3>暂无数据</h3>
         </div>
       </div>
-      <!--右侧-->
+      <!--右侧 天气-->
       <aside class="right">
         <div class="cb-weather">
           <iframe width="250" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=1"></iframe>
